@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="css/cv-styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <section class="section-one">
+        <div class="intro">
+          <img
+            src="images/jpg/Profile_img.png"
+            style="max-width: 100%"
+            alt="profile image"
+            id="profile-img"
+            class="profile-img"
+          />
+          <div class="intro-info">
+            <!-- <div class="salut-spot">
+              <h2>Hi, I'm</h2>
+            </div> -->
+            <h1>Alexandru Bej</h1>
+            <h5>Web Developer | Graphic Designer</h5>
+            <div class="contact-methods">
+              <a href="https://www.linkedin.com/in/alexandru-bej-203a72ab/" target="_blank">
+                <i class="fa-brands fa-linkedin contact-icon"></i>
+              </a>
+              <a href="mailto:alexbej07@gmail.com">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+              </a>
+              <button onclick="withoutJquery();" id="copy">
+                <i class="fa-solid fa-phone contact-icon"></i>
+                <span id="data">+39 637 951 478</span>
+              </button>
+              <!-- <span id="copy">Phone: +39 637 951 478</span> -->
+              <!-- <a href="tel: +39637951478">
+                <i class="fa-solid fa-phone"></i>
+              </a> -->
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="mt6">
+          <h3>About</h3>
+          <p>
+            Hey there! 👋 I'm an enthusiastic web developer with over 4 years of
+            hands-on experience, specializing in crafting bespoke websites and
+            applications. My journey in web development has taken me through a
+            rich tapestry of technologies and programming languages, and I'm
+            excited to bring this expertise to your project.
+          </p>
+          <p>
+            As a web developer, I'm on a mission to transform your unique ideas
+            into stunning, functional websites that leave a lasting impression.
+            Whether you need a dynamic portfolio site, a captivating blog, a
+            robust online presence for your business, or anything in between,
+            I'm here to make it happen.
+          </p>
+          <p class="center-p">
+            Let's team up and turn your vision into a pixel-perfect reality!
+          </p>
+        </div>
+      </section>
+      <section>
+        <h3 id="experience">Experience</h3>
+
+        <div class="experience-title-row row">
+          <div class="col-8 title-left">
+            <h4>IT Consultant - Frontend Developer</h4>
+            <h6>Rindus Technology S.L</h6>
+          </div>
+          <div class="title-right col-4">
+            <h6 class="period">2022 - 2023</h6>
+            <span class="txt-13">Málaga, Spain</span>
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Spearheaded the development of a cutting-edge advertising
+            application, catering to diverse advertising spot types including
+            physical and digital in the German market.
+          </li>
+          <li>
+            Leveraged Angular framework to create responsive and interactive
+            user interfaces, ensuring seamless user experiences.
+          </li>
+          <li>
+            Implemented state management using ngrx Store, employing actions,
+            effects, reducers, and selectors for efficient data flow and
+            application scalability.
+          </li>
+          <li>
+            Proficiently utilized RxJS operators such as combineLatest,
+            withLatestFrom, switchMap, Subject, and Observable, to manage
+            complex asynchronous operations and streamline data handling.
+          </li>
+          <li>
+            Collaborated in the integration of Google Maps APIs to enhance
+            location-based services, optimizing user experiences, and
+            implemented Google Sign-In authentication for seamless and secure
+            user access, ensuring data protection and user convenience.
+          </li>
+          <li>
+            Deployed the application to Microsoft Azure for robust cloud
+            infrastructure, enabling high availability, scalability, and
+            efficient resource management.
+          </li>
+          <li>Managed version control and collaboration with Git on Azure.</li>
+          <li>Utilized Sentry for real-time error tracking and resolution.</li>
+          <li>
+            Actively contributed to an Agile development environment, actively
+            participating in daily Scrum meetings, sprint planning, backlog
+            refinement, and retrospectives
+          </li>
+          <li>
+            Engaged in code reviews to ensure code quality, adherence to coding
+            standards, and knowledge sharing within the team
+          </li>
+        </ul>
+
+        <div class="experience-title-row row">
+          <div class="col-8 title-left">
+            <h4>Full Stack Developer</h4>
+            <h6>Continental Romania</h6>
+          </div>
+          <div class="title-right col-4">
+            <h6 class="period">2019 - 2022</h6>
+            <span class="txt-13">Timișoara, Romania</span>
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Developed new and enhanced existing web applications with
+            quality-focused features, modernizing and replacing outdated
+            functionalities to improve user experiences.
+          </li>
+          <li>
+            Demonstrated expertise in Frontend Development by crafting intuitive
+            and responsive user interfaces using Angular and TypeScript.
+          </li>
+          <li>
+            Proficiently handled Backend Development utilizing technologies such
+            as Spring Boot, Java 8, Spring Framework, Graphics2D, Eclipse IDE
+            with Spring Tool Suite 4, .NET Core, and .NET Framework.
+          </li>
+          <li>
+            Actively contributed as a full stack developer and graphic designer
+            to multiple internal web-based applications, including a centralized
+            database for internal reusable functions, designed for future
+            integration into other projects and systems. This database emulated
+            an online store, complete with shopping cart functionality,
+            subscription management for function newsletters, and the ability to
+            mark items as favorites.
+          </li>
+          <li>
+            Led design efforts for projects, covering web interfaces, logos,
+            icons, typography, and other illustrations using Adobe Creative
+            Cloud (Photoshop and Illustrator)..
+          </li>
+          <li>
+            Orchestrated full web application lifecycle, from stakeholder
+            requirement gathering to roadmap planning, sprint task allocation,
+            and ongoing development and maintenance.
+          </li>
+          <li>
+            Managed databases effectively, with a focus on MongoDB, utilizing
+            tools like NoSQL Booster for streamlined data management
+          </li>
+        </ul>
+
+        <div class="experience-title-row row">
+          <h4 class="col-8">Freelance Web Developer and Graphic Designer</h4>
+          <div class="title-right col-4">
+            <h6 class="period">2018 - present</h6>
+          </div>
+        </div>
+        <ul>
+          <li>
+            Developed websites or graphic content, like logos, posters, or any
+            kind of illustration, for various clients in order to build their
+            online presence and improve their brand
+          </li>
+        </ul>
+
+        <div class="experience-title-row row">
+          <div class="col-8 title-left">
+            <h4>Junior Software Developer</h4>
+            <h6>Continental Romania</h6>
+          </div>
+          <div class="title-right col-4">
+            <h6 class="period">2018 - 2019</h6>
+            <span class="txt-13">Timișoara, Romania</span>
+          </div>
+        </div>
+        <ul>
+          <li>
+            Expanded functionality of a critical internal tool: an Eclipse IDE
+            plugin integrated with Eclipse Core. This tool played a pivotal role
+            in Unit and Hardware Testing across numerous company projects.
+          </li>
+          <li>
+            Designed and implemented a user-friendly GUI featuring a table-like
+            view, generated within an HTML page for precise bit-by-bit CANoe
+            signal analysis.
+          </li>
+          <li>
+            Contributed to feature enhancement and maintenance across multiple
+            programming languages, including C#, C++, and Java.
+          </li>
+          <li>
+            Actively participated in code reviews and version control through
+            Gerrit, maintaining code quality and collaboration standards.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="education">Education</h3>
+
+        <div class="education-title-row row">
+          <div class="col-8 title-left">
+            <h4>Masters in Management of Electric Power Systems</h4>
+            <h6>Polytechnic University of Timișoara</h6>
+          </div>
+          <div class="title-right col-4">
+            <h6 class="period">2018 - 2020</h6>
+            <span class="txt-13">Timișoara, Romania</span>
+          </div>
+        </div>
+
+        <div class="education-title-row row">
+          <div class="col-8 title-left">
+            <h4>Bachelor in Power Engineering</h4>
+            <h6>Polytechnic University of Timișoara</h6>
+          </div>
+          <div class="title-right col-4">
+            <h6 class="period">2014 - 2018</h6>
+            <span class="txt-13">Timișoara, Romania</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 id="skills">Skills</h3>
+        <ul>
+          <li>
+            Frontend development (Angular CLI, Typescript, HTML, HTML5, CSS,
+            CSS3, SCSS, Bootstrap, Angular Material, JavaScript, JSON, NgRx,
+            RxJS)
+          </li>
+          <li>
+            Backend development (Java, Java SE, JDK 8, Spring Boot, Hibernate,
+            JPA, Lombok, Maven, JIRA API, C#, .NET Core, .NET Framework)
+          </li>
+          <li>Database (MongoDB, MySQL, MySQL Workbench)</li>
+          <li>Google Maps API and Google Sign-In library</li>
+          <li>
+            Continuous Integration and Continuous Deployment with Microsoft
+            Azure, Jenkins
+          </li>
+          <li>
+            Agile Methodologies (Scrum, Kanban, Planning, Refinements,
+            Retrospective)
+          </li>
+          <li>Version Control (Git, Gerrit, Azure)</li>
+          <li>Design (Photoshop, Illustrator, Figma)</li>
+          <li>Issue Tracking (JIRA)</li>
+          <li>
+            Soft Skills (Teamwork, Creativity, Good attitude, Flexibility,
+            Organization, Desire to learn, Independence, Time Management,
+            Problem solving)
+          </li>
+        </ul>
+      </section>
+
+      <section class="row misc-row">
+
+        <div class="col-6 misc-col">
+          <h3 id="hobbies">Hobbies</h3>
+          <ul class="misc-list">
+            <li>Camping, Nature Hikes</li>
+            <li>Travelling, Sight Seeing, Learning about new cultures</li>
+            <li>Cooking (I'm a foodie)</li>
+            <li>Reading, Listening to Music, Playing Video Games</li>
+            <li>Graphic design, Coding personal projects, Videography</li>
+          </ul>
+        </div>
+
+        <div class="col-6 misc-col">
+          <h3>Known Languages</h3>
+          <ul class="misc-list">
+            <li>English</li>
+            <li>Romanian</li>
+            <li>Spanish: Elementary proficiency (still learning)</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="btn-container">
+        <!-- <div class="fixed"> -->
+        <button class="quick-menu-btn" title="Alexandru Bej">
+          <img src="images/jpg/Profile_img_thumbnail.png" class="profile-thumbnail" alt="" />
+        </button>
+
+        <button class="quick-menu-btn" title="Experience">
+          <a href="#experience">
+            <i class="fa-solid fa-briefcase menu-icon"></i>
+          </a>
+        </button>
+
+        <button class="quick-menu-btn" title="Education">
+          <a href="#education">
+            <i class="fa-solid fa-graduation-cap menu-icon"></i>
+          </a>
+        </button>
+
+        <button class="quick-menu-btn" title="Skills">
+          <a href="#skills">
+            <i class="fa-solid fa-clipboard-list menu-icon"></i>
+          </a>
+        </button>
+
+        <button class="quick-menu-btn" title="Hobbies">
+          <a href="#hobbies">
+            <i class="fa-solid fa-gamepad menu-icon"></i>
+          </a>
+        </button>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="bottom">
+      <span>@ Copyright Alexandru Vlad Bej 2023</span>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script> -->
+  </body>
+</html>
