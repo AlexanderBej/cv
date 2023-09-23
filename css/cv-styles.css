@@ -27,15 +27,11 @@ body {
 }
 
 .intro {
-  /* margin-top: 6em; */
   padding: 3em;
   background-color: aliceblue;
   display: inline-flex;
   width: 100%;
   border-radius: 1em;
-  /* -webkit-box-shadow: -5px 5px 17px -3px rgba(120, 120, 120, 0.9);
-  -moz-box-shadow: -5px 5px 17px -3px rgba(120, 120, 120, 0.9);
-  box-shadow: -5px 5px 17px -3px rgba(120, 120, 120, 0.9); */
 }
 
 .salut-spot {
@@ -45,15 +41,6 @@ body {
   transform: rotate(339deg);
   font-family: "Marhey", sans-serif;
 }
-
-/* .comic-intro {
-  font-family: "Marhey", sans-serif;
-  margin: 4em 0 1em;
-} */
-
-/* .comic-intro h5 {
-  text-align: center;
-} */
 
 h3 {
   text-align: center;
@@ -81,7 +68,7 @@ h4 {
   margin-top: 6em;
 }
 
-.btn-container {
+.quick-menu-container {
   position: absolute;
   right: -70px;
   display: inline-flex;
@@ -118,19 +105,6 @@ li {
   margin-bottom: 0.5em;
 }
 
-/* .fixed {
-  position: fixed;
-  width: 100px;
-  background-color: #ffffff;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
-  -webkit-box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
-  -moz-box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
-  padding: 1.5em;
-} */
-
 button {
   background: unset;
   border: unset;
@@ -140,6 +114,10 @@ button {
 
 button:hover {
   transform: scale(1.1);
+}
+
+button:focus-visible {
+  outline: none;
 }
 
 .menu-icon {
@@ -181,10 +159,87 @@ button:hover {
   padding-bottom: 5px;
 }
 
+.popover-header {
+  display: none;
+}
 
+.popover-body {
+  width: 250px;
+  height: 340px;
+  padding: 0 !important;
+}
 
+.popover-container-top {
+  background-color: aliceblue;
+  padding: 20px 20px 40px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
+.popover-info {
+  margin-top: 20px;
+}
 
+.popover-info h3 {
+  font-size: 1.3em;
+  border: none;
+}
+
+.popover-info h5 {
+  font-size: 0.8em;
+}
+
+.popover-container-bottom {
+  height: 84px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#download {
+  background-color: #4e75a1;
+  padding: 3px 15px;
+  text-align: center;
+  border-radius: 20px;
+  height: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s ease-in;
+}
+
+#download:hover {
+  transform: scale(1.1);
+}
+
+.lower-menu-container {
+  transition: all 0.2s ease-in-out;
+  display: none;
+  position: absolute;
+  right: -70px;
+  width: 70px;
+  top: 400px;
+}
+
+.displayed {
+  display: block;
+}
+
+.lower-menu-btns {
+  display: inline-flex;
+  flex-direction: column;
+  position: fixed;
+  width: 70px;
+  height: 140px;
+  background: white;
+  box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
+  -webkit-box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
+  -moz-box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
+}
 
 
 
@@ -197,9 +252,6 @@ button:hover {
     font-size: 1em !important;
   }
 }
-
-
-
 
 @media screen and (max-width: 975px) {
   .page {
@@ -214,14 +266,11 @@ button:hover {
     font-size: calc(1rem + 1.5vw) !important;
   }
 
-  .btn-container {
+  .quick-menu-container {
     right: -60px;
     width: 60px;
   }
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .page {
@@ -241,7 +290,7 @@ button:hover {
     margin-bottom: 3em;
   }
 
-  .btn-container {
+  .quick-menu-container {
     left: 0;
     top: 0;
     width: 100%;
@@ -265,7 +314,9 @@ button:hover {
     font-size: calc(1rem + 0.3vw) !important;
   }
 
-  h5, h6, .misc-list {
+  h5,
+  h6,
+  .misc-list {
     font-size: 0.8em !important;
   }
 
@@ -278,9 +329,6 @@ button:hover {
   }
 }
 
-
-
-
 @media screen and (max-width: 600px) {
   .intro {
     padding: 2em 1em;
@@ -292,12 +340,9 @@ button:hover {
 
   h3 {
     font-size: calc(1rem + 0.3vw) !important;
-    margin-bottom: 1em!important;
+    margin-bottom: 1em !important;
   }
 }
-
-
-
 
 @media screen and (max-width: 480px) {
   .page {
@@ -318,7 +363,8 @@ button:hover {
     font-size: 23px;
   }
 
-  p, ul:not(.misc-list) {
+  p,
+  ul:not(.misc-list) {
     font-size: 14px;
   }
 
@@ -327,6 +373,6 @@ button:hover {
   }
 
   .misc-col {
-    width: 100%!important;
+    width: 100% !important;
   }
 }
