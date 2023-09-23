@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Alex Bej</title>
+    <title>CV</title>
     <link rel="stylesheet" href="css/cv-styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -26,7 +26,7 @@
     />
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="top">
       <section class="section-one">
         <div class="intro">
           <img
@@ -37,33 +37,28 @@
             class="profile-img"
           />
           <div class="intro-info">
-            <!-- <div class="salut-spot">
-              <h2>Hi, I'm</h2>
-            </div> -->
             <h1>Alexandru Bej</h1>
             <h5>Web Developer | Graphic Designer</h5>
             <div class="contact-methods">
-              <a href="https://www.linkedin.com/in/alexandru-bej-203a72ab/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/alexandru-bej-203a72ab/"
+                target="_blank"
+              >
                 <i class="fa-brands fa-linkedin contact-icon"></i>
               </a>
               <a href="mailto:alexbej07@gmail.com">
                 <i class="fa-solid fa-envelope contact-icon"></i>
               </a>
-              <button onclick="withoutJquery();" id="copy">
+              <div>
                 <i class="fa-solid fa-phone contact-icon"></i>
                 <span id="data">+39 637 951 478</span>
-              </button>
-              <!-- <span id="copy">Phone: +39 637 951 478</span> -->
-              <!-- <a href="tel: +39637951478">
-                <i class="fa-solid fa-phone"></i>
-              </a> -->
-              
+              </div>
             </div>
           </div>
         </div>
 
         <div class="mt6">
-          <h3>About</h3>
+          <h3 id="about">About</h3>
           <p>
             Hey there! 👋 I'm an enthusiastic web developer with over 4 years of
             hands-on experience, specializing in crafting bespoke websites and
@@ -298,7 +293,6 @@
       </section>
 
       <section class="row misc-row">
-
         <div class="col-6 misc-col">
           <h3 id="hobbies">Hobbies</h3>
           <ul class="misc-list">
@@ -320,12 +314,7 @@
         </div>
       </section>
 
-      <div class="btn-container">
-        <!-- <div class="fixed"> -->
-        <button class="quick-menu-btn" title="Alexandru Bej">
-          <img src="images/jpg/Profile_img_thumbnail.png" class="profile-thumbnail" alt="" />
-        </button>
-
+      <div class="quick-menu-container">
         <button class="quick-menu-btn" title="Experience">
           <a href="#experience">
             <i class="fa-solid fa-briefcase menu-icon"></i>
@@ -349,20 +338,41 @@
             <i class="fa-solid fa-gamepad menu-icon"></i>
           </a>
         </button>
-        <!-- </div> -->
+      </div>
+      <div class="lower-menu-container" id="hidden-container">
+        <div class="lower-menu-btns">
+          <button
+            type="button"
+            class="quick-menu-btn"
+            title="Alexandru Bej"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Top popover"
+          >
+            <img
+              src="images/jpg/Profile_img_thumbnail.png"
+              class="profile-thumbnail"
+              alt=""
+            />
+          </button>
+          <button type="button" id="back-to-top-btn" class="menu-icon" title="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="bottom">
       <span>@ Copyright Alexandru Vlad Bej 2023</span>
     </div>
-
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
