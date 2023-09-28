@@ -57,11 +57,15 @@ h4 {
 .intro-info {
   margin-left: 5em;
   position: relative;
+  width: inherit;
 }
 
 .contact-methods {
   position: absolute;
   bottom: 0;
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .mt6 {
@@ -105,14 +109,14 @@ li {
   margin-bottom: 0.5em;
 }
 
-button {
+button, a {
   background: unset;
   border: unset;
   padding: 0;
   transition: all 0.2s ease-in;
 }
 
-button:hover {
+button:hover, a:hover {
   transform: scale(1.1);
 }
 
@@ -120,9 +124,17 @@ button:focus-visible {
   outline: none;
 }
 
+.menu-icon, .contact-icon {
+  color: #4e75a1;
+}
+
 .menu-icon {
   font-size: 33px;
-  color: #4e75a1;
+}
+
+.contact-icon {
+  font-size: 21px;
+  margin: 6px;
 }
 
 .quick-menu-btn {
@@ -157,6 +169,7 @@ button:focus-visible {
 .bottom {
   text-align: center;
   padding-bottom: 5px;
+  height: 2em;
 }
 
 .popover-header {
@@ -253,6 +266,16 @@ button:focus-visible {
   }
 }
 
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .section-one {
+    height: auto;
+  }
+
+  .center-p {
+    margin-bottom: 3em;
+  }
+}
+
 @media screen and (max-width: 975px) {
   .page {
     padding: 5em 2em;
@@ -327,7 +350,22 @@ button:focus-visible {
   p {
     font-size: 1em;
   }
+
+  .lower-menu-container {
+    right: unset;
+    width: 140px;
+    left: calc(50% - 70px);
+    top: calc(100vh - 198px);
+  }
+
+  .lower-menu-btns {
+    width: 140px;
+    height: 70px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
+
 
 @media screen and (max-width: 600px) {
   .intro {
@@ -362,6 +400,11 @@ button:focus-visible {
   .menu-icon {
     font-size: 23px;
   }
+  
+  .contact-icon {
+    font-size: 16px;
+    margin: 3px;
+  }
 
   p,
   ul:not(.misc-list) {
@@ -374,5 +417,9 @@ button:focus-visible {
 
   .misc-col {
     width: 100% !important;
+  }
+
+  .lower-menu-container {
+    top: calc(100vh - 135px);
   }
 }
