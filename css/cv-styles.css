@@ -1,3 +1,4 @@
+/* HTML tags */
 html {
   scroll-behavior: smooth;
 }
@@ -5,6 +6,72 @@ html {
 body {
   background-color: #efc7c24d !important;
 }
+
+a {
+  color: unset !important;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+ul {
+  padding: 1em 0 3em;
+  text-align: justify;
+  list-style-type: circle;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+button,
+a {
+  background: unset;
+  border: unset;
+  padding: 0;
+  transition: all 0.2s ease-in;
+}
+
+button:hover,
+a:hover {
+  transform: scale(1.1);
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  margin-bottom: 2rem !important;
+}
+
+h4 {
+  color: #4e75a1 !important;
+  font-weight: 700 !important;
+}
+
+/* General */
+
+.mt6 {
+  margin-top: 6em;
+}
+
+.center-p {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.txt13 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Page layout */
 
 .page {
   width: 80%;
@@ -26,6 +93,24 @@ body {
   height: calc(100vh - 11em);
 }
 
+.title-right {
+  text-align: right;
+}
+
+.period {
+  border: 2px solid black;
+  width: fit-content;
+  margin-left: auto;
+  padding: 1px 10px;
+  border-radius: 30px;
+}
+
+.education-title-row {
+  margin-bottom: 3em;
+}
+
+/* Profile container with contact methods*/
+
 .intro {
   padding: 3em;
   background-color: aliceblue;
@@ -42,18 +127,6 @@ body {
   font-family: "Marhey", sans-serif;
 }
 
-h3 {
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom: 2px solid black;
-  margin-bottom: 2rem !important;
-}
-
-h4 {
-  color: #4e75a1 !important;
-  font-weight: 700 !important;
-}
-
 .intro-info {
   margin-left: 5em;
   position: relative;
@@ -68,9 +141,12 @@ h4 {
   flex-wrap: wrap;
 }
 
-.mt6 {
-  margin-top: 6em;
+.contact-icon {
+  font-size: 21px;
+  margin: 6px;
 }
+
+/* Quick menu */
 
 .quick-menu-container {
   position: absolute;
@@ -85,56 +161,13 @@ h4 {
   -moz-box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
 }
 
-a {
-  color: unset !important;
-}
-
-p {
-  font-size: 1.1em;
-  text-align: justify;
-}
-
-p.center-p {
-  text-align: center;
-  margin-top: 2em;
-}
-
-ul {
-  padding: 1em 0 3em;
-  text-align: justify;
-  list-style-type: circle;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-button, a {
-  background: unset;
-  border: unset;
-  padding: 0;
-  transition: all 0.2s ease-in;
-}
-
-button:hover, a:hover {
-  transform: scale(1.1);
-}
-
-button:focus-visible {
-  outline: none;
-}
-
-.menu-icon, .contact-icon {
+.menu-icon,
+.contact-icon {
   color: #4e75a1;
 }
 
 .menu-icon {
   font-size: 33px;
-}
-
-.contact-icon {
-  font-size: 21px;
-  margin: 6px;
 }
 
 .quick-menu-btn {
@@ -145,32 +178,7 @@ button:focus-visible {
   width: 42px;
 }
 
-.title-right {
-  text-align: right;
-}
-
-.period {
-  border: 2px solid black;
-  width: fit-content;
-  margin-left: auto;
-  padding: 1px 10px;
-  border-radius: 30px;
-}
-
-.txt-13 {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.education-title-row {
-  margin-bottom: 3em;
-}
-
-.bottom {
-  text-align: center;
-  padding-bottom: 5px;
-  height: 2em;
-}
+/* Popover */
 
 .popover-header {
   display: none;
@@ -225,9 +233,7 @@ button:focus-visible {
   transition: all 0.2s ease-in;
 }
 
-#download:hover {
-  transform: scale(1.1);
-}
+/* Small card and back to top button */
 
 .lower-menu-container {
   transition: all 0.2s ease-in-out;
@@ -254,15 +260,23 @@ button:focus-visible {
   -moz-box-shadow: 3px -1px 5px -3px rgba(120, 120, 120, 0.9);
 }
 
+/* Copyright container */
 
+.bottom {
+  text-align: center;
+  padding-bottom: 5px;
+  height: 2em;
+}
+
+/* Media query breakpoints */
 
 @media screen and (max-width: 1200px) {
-  .page {
-    width: 85%;
-  }
-
   h5 {
     font-size: 1em !important;
+  }
+
+  .page {
+    width: 85%;
   }
 }
 
@@ -277,16 +291,16 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 975px) {
+  h1 {
+    font-size: calc(1rem + 1.5vw) !important;
+  }
+
   .page {
     padding: 5em 2em;
   }
 
   .profile-img {
     height: 150px;
-  }
-
-  h1 {
-    font-size: calc(1rem + 1.5vw) !important;
   }
 
   .quick-menu-container {
@@ -296,35 +310,6 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 768px) {
-  .page {
-    width: calc(100% - 2em);
-    margin: 3em 1em;
-  }
-
-  .section-one {
-    height: 100%;
-  }
-
-  .mt6 {
-    margin-top: 3em;
-  }
-
-  .center-p {
-    margin-bottom: 3em;
-  }
-
-  .quick-menu-container {
-    left: 0;
-    top: 0;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: unset;
-    -webkit-box-shadow: unset;
-    -moz-box-shadow: unset;
-  }
-
   h1 {
     font-size: calc(1rem + 1vw) !important;
   }
@@ -351,6 +336,35 @@ button:focus-visible {
     font-size: 1em;
   }
 
+  .mt6 {
+    margin-top: 3em;
+  }
+
+  .page {
+    width: calc(100% - 2em);
+    margin: 3em 1em;
+  }
+
+  .section-one {
+    height: 100%;
+  }
+
+  .center-p {
+    margin-bottom: 3em;
+  }
+
+  .quick-menu-container {
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+  }
+
   .lower-menu-container {
     right: unset;
     width: 140px;
@@ -366,8 +380,12 @@ button:focus-visible {
   }
 }
 
-
 @media screen and (max-width: 600px) {
+  h3 {
+    font-size: calc(1rem + 0.3vw) !important;
+    margin-bottom: 1em !important;
+  }
+
   .intro {
     padding: 2em 1em;
   }
@@ -375,14 +393,14 @@ button:focus-visible {
   .intro-info {
     margin-left: 1em;
   }
-
-  h3 {
-    font-size: calc(1rem + 0.3vw) !important;
-    margin-bottom: 1em !important;
-  }
 }
 
 @media screen and (max-width: 480px) {
+  p,
+  ul:not(.misc-list) {
+    font-size: 14px;
+  }
+
   .page {
     width: 100%;
     margin: 1em 0;
@@ -400,15 +418,10 @@ button:focus-visible {
   .menu-icon {
     font-size: 23px;
   }
-  
+
   .contact-icon {
     font-size: 16px;
     margin: 3px;
-  }
-
-  p,
-  ul:not(.misc-list) {
-    font-size: 14px;
   }
 
   .misc-row {
